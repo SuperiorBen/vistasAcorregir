@@ -1,0 +1,260 @@
+/* ========================================================================================================================= */
+/* ================================================  Main Navbar fixed   ====================================================*/
+/* ========================================================================================================================= */
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.content-views {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* left: 20em; */
+}
+
+.navbarSide {
+  width: 20em;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #142736;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbarSide>.logo-section {
+  width: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.navbarSide>.logo-section>.logo-pc {
+  width: 5em;
+  margin-right: 0.5em;
+}
+
+.navbarSide>.logo-section>.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarSide>.logo-section>.logo-text>img {
+  width: 7em;
+}
+
+.navbarSide>.logo-section>.logo-text>p {
+  margin: 0px;
+  font-size: 0.6em;
+  color: white;
+  font-weight: 500;
+}
+
+.navbarSide>.user-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  width: 15em;
+  height: 3em;
+  border-radius: 4px;
+  margin-top: 1.5em;
+  overflow: hidden;
+}
+
+/* User name */
+.navbarSide>.user-name>i {
+  font-size: 1em;
+  color: #142736;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.navbarSide>.user-name>.user {
+  font-family: Arial;
+  text-transform: capitalize;
+  color: #142736;
+  margin: 0px;
+  font-size: 1em;
+}
+
+/* Menu items */
+.menu-items {
+  color: white;
+  font-size: 1em;
+  font-family: Arial;
+  list-style: none;
+  width: 15em;
+  margin-top: 2em;
+}
+
+.menu-items>li {
+  width: 20em;
+  height: 3.5em;
+  padding: 0px;
+}
+
+.menu-items>li>.nav-option-btn {
+  width: 20em;
+  height: 3.5em;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-items>li>.nav-option-btn:hover {
+  color: #142736;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-items>li>.nav-option-btn>.icon {
+  width: 2em;
+  height: 2em;
+  background: white;
+  color: #142736;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5em;
+  margin-left: 1em;
+}
+
+.menu-items>li>.nav-option-btn>p {
+  margin: 0px;
+  width: 14em;
+}
+
+.min-text {
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+
+
+/* TOPUPS */
+.content-topups {
+  left: 0px;
+  width: calc(100vw - 20em);
+  height: 100vh;
+  margin-left: 20em;
+  position: absolute;
+  top: 0px;
+  background-color: #F3F4F6;
+}
+
+.form-topups {
+  margin-left: 2em;
+  margin-bottom: 1em !important;
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+  margin-top: 2em;
+}
+
+.input-section>.select-search {
+  width: 18em;
+  margin: 0px;
+}
+
+.input-section>.select-search>#opt {
+  height: 38px;
+  font-size: 1.2em;
+}
+
+.input-section>#curInput {
+  width: 20em;
+  margin-left: 1em;
+}
+
+.input-section>#curInput>.in-search {
+  height: 38px;
+  font-size: 1.2em;
+}
+
+.input-section>#bsearch {
+  margin-left: 1em;
+  text-transform: capitalize;
+  border-color: #142736 !important;
+  border-width: 2px !important;
+  color: #142736;
+  background-color: white;
+}
+
+.input-section>#bsearch:hover {
+  color: white !important;
+  background-color: #142736;
+}
+
+.input-section>#bdownload {
+  margin-left: 1em;
+}
+
+.content-table {
+  width: 95%;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+.content-table::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.content-table::-webkit-scrollbar-track {
+  background: #162b3e00;
+}
+
+/* Handle */
+.content-table::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.content-table::-webkit-scrollbar-thumb:hover {
+  background: #c9a892;
+}
+
+
+
+/* Find by wallet  */
+
+.content-find-wallet {
+  left: 0px;
+  width: calc(100vw - 20em);
+  height: 100vh;
+  margin-left: 20em;
+  position: absolute;
+  top: 0px;
+  background-color: #F3F4F6;
+}
